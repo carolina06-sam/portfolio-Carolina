@@ -1,9 +1,13 @@
+.nav-menu_visible {
+    bottom: 0; /* cuando vuelva a su posicion original , cuando esta clase esta activa se ve el menu */
+}
 @import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
 html {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
 }
+
 .section-hero-no-bg {
     background-color: #18191b;
 }
