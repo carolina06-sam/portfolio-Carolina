@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portafolio Carolina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profession is Personal Portfolio Template">
+    <meta name="keywords" content="business, clean, contact form, corporate, cv, light, minimalist, modern, personal, personal profile, portfolio, resume, vcard, virtual card">
+    <meta name="author" content="">
+  <script src="https://kit.fontawesome.com/a7ccf0be94.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="./images/logofinal.jpeg" />
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/integration
+                emailjs.init("user_HV0gBfwzcYyGlfAkhaeCF");
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_vdv6r1h', 'template_1jcsakf', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                            alert("su mensaje se ha enviado")
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" media ="only screen and (max-width: 768px)" href="css/">
+
+    <!-- background -->
+    <link rel="stylesheet" href="css/bg.css" type="text/css">
+
+    <!-- color scheme -->
+    <link rel="stylesheet" href="css/colors/scheme-3.css" type="text/css">
+</head>
+
+<body id="homepage" class="side-content side-layout">
+
+    <div id="wrapper">
+
+        <!-- header begin -->
+        <header class="header-light">
+            <div class="info">
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="#wrapper">
+                                <img class="logo" src="images/logofinal.jpeg" alt="">
+                                <img class="logo-2" src="images/logofondoblanco.png" alt="" 
+                                style="width: 83px; height: 80px">
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- small button begin -->
+                        <span id="menu-btn"><i class="fas fa-bars"></i></span><br>
+                        <!-- small button close -->
+
+                        <!-- mainmenu begin -->
+                        <nav>
+                            <ul id="mainmenu">
+                                
+                                <li><a class="neon" href="#section-home">Inicio</a></li>
+                                <li><a class="neon" href="#section-about">Sobre mi</a></li>
+                                <li><a class="neon" href="#section-portfolio">Portafolio</a></li>
+                                <li><a class="neon" href="#resume">Resumen</a></li>
+                                <li><a class="neon" href="#section-redes">Contáctame</a></li>
+                               
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- mainmenu close -->
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <!-- content begin -->
+        <div id="content" class="no-bottom no-top">
+            <div id="top"></div>
+            <!-- section begin -->
+            <section id="section-home">
+                <section id="section-hero-no-bg" class="no-top no-bottom">
+                <div class="no-top no-bottom t30">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="spacer-double"></div>
+
+                            <div class="col-md-6">
+                                <div class="spacer-double"></div>
+
+                                <div class="h1_big">
+                                    Soy
+                                    <div class="typed-strings">
+                                        <p> Desarrolladora web</p>
+                                        <p>Administadora</p>
+                                    </div>
+                                    <div class="typed"></div>
+
+                                </div>
+
+                                <div class="spacer-half"></div>
+                                <p class="lead">
+                         
+                                El secreto para una vida exitosa es encontrar nuestro propósito y luego hacerlo
+                    
+                                </p>
+                                <p>Henry Ford</p>
+                                <div class="spacer-half"></div>
+                              
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <img src="images/carolinafoto.jpg" class="img-responsive " alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </section>
+            <!-- section close -->
+
+
+            <!-- section begin -->
+            <section id="section-about">
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            
+                            <h2>¡Hola! mi nombres es  carolina samaca</h2>
+                        </div>
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <p> Bienvenido a mi portafolio,soy Administadora de empresas y desarrolladora web  con gran interes en el desarrollo sostenible e integro de las organizaciones,brindando oportunidades y soluciones en la era digital </p>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </section> 
+            <!--section close --> 
+                
+
+            <!--section begin -->
+            <section id="section-services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            
+                            <h2>Habilidades</h2>
+                            <div id="carousel-3" class="sequence">
+                                   <!-- feature box begin -->
+                                 <div class="feature-box col-md-4 carousel-item sq-item wow">
+                                    <div class="inner">
+                                        <i class="fab fa-html5"></i>
+                                        <div class="text">
+                                            <h3>HTML</h3>
+                                        </div>
+                                    </div>
+                                 </div>
+                                <!-- feature box close -->
+                                 <!-- feature box begin -->
+                                <div class="feature-box col-md-4 carousel-item sq-item wow">
+                                        <div class="inner">
+                                            <i class="fab fa-css3-alt lenguaje-icon"></i>
+                                            <div class="text">
+                                                <h3>CSS</h3>
+                                            </div>
+                                        </div>
+                                 </div>
+                                <!-- feature box close -->
+                                <!-- feature box begin -->
+                                 <div class="feature-box col-md-4 carousel-item sq-item wow">
+                                    <div class="inner">
+                                        <i class="fab fa-js-square"></i>
+                                        <div class="text">
+                                            <h3>Javascript</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- feature box close -->
+
+                                <!-- feature box begin -->
+                                <div class="feature-box col-md-4 carousel-item sq-item wow">
+                                    <div class="inner">
+                                        <i class="fab fa-angular"></i>
+                                        <div class="text">
+                                            <h3>Angular</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- feature box close -->
+                                <!-- feature box begin -->
+                                <div class="feature-box col-md-4 carousel-item sq-item wow">
+                                    <div class="inner" >
+                                        <i class="fab fa-python"></i>
+                                        <div class="text">
+                                            <h3>Python</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- feature box close -->
+
+                                <!-- feature box begin -->
+                                <div class="feature-box col-md-4 carousel-item sq-item wow">
+                                    <div class="inner">
+                                        <i class="fab fa-github"></i>
+                                        <div class="text">
+                                            <h3>GitHub</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- feature box close -->
+                                <!-- feature box begin -->
+                                <div class="feature-box col-md-4 carousel-item sq-item wow">
+                                    <div class="inner">
+                                        <i class="fab fa-node-js"></i>
+                                        <div class="text">
+                                            <h3>Node.js</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- feature box close -->
+                                  <!-- feature box begin -->
+                                  <div class="feature-box col-md-4 carousel-item sq-item wow">
+                                    <div class="inner">
+                                        <i class="fab fa-bootstrap"></i>
+                                        <div class="text">
+                                            <h3>Bootstrap</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- feature box close -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section id="section-portfolio">
+                <div class="container">
+                    <div class="container">
+                    <!-- portfolio filter begin -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            
+                            <h2>Proyectos</h2>
+
+                            
+                        </div>
+
+                        <div class="col-md-12 text-center mt30">
+                            <ul id="filters">
+                                <li><a href="#" data-filter="*" class="selected">Todos los proyectos</a></li>
+                                <li><a href="#" data-filter=".desarrollo"> Desarrollo-Front-end</a></li>
+                                <li><a href="#" data-filter=".crud">Desarrollo full-stack</a></li>
+                                <li><a href="#" data-filter=".retos">Retos</a></li>
+                                       
+                            </ul>                
+                            <div id="gallery" class="gallery full-gallery     de-gallery pf_full_width pf_3_cols grid sequence">
+                                <!-- gallery item -->
+                                <div class="item desarrollo gallery-item">
+                                    <div class="picframe wow">
+                                        <a href="https://lasdeliciasdeclau.netlify.app/" target="_blank">
+                                        <span class="overlay">
+                                            <span class="pf_text">
+                                                <span class="project-name">App de pagos</span>
+                                                <span class="project-name"></span>
+                                            </span>
+                                        </span>
+                                        <img src="images/portfolio/las delicias.png" alt="app las delicias de clau"  style="width: 500px; height: 100%; margin-left: 0px; margin-top: 0px;">
+                                       </a> 
+                                  </div>
+                                </div>    
+                                   <!-- close gallery item -->
+                                <div class="item desarrollo gallery-item">
+                                    <div class="picframe wow">
+                                        <a href="https://carolina06-sam.github.io/To-Do-React/" target="_blank">
+											<span class="overlay">
+												<span class="pf_text">
+													<span class="project-name">Lista de tareas</span>
+												</span>
+											</span>
+											<img src="images/portfolio/listadetareas.jpeg" alt="lista de tareas"/>
+										</a>
+                                    </div>
+                                </div>
+                              
+                                <!-- close gallery item -->
+                                 <!-- gallery item -->
+                            
+                                <div class="item crud gallery-item">
+                                    <div class="picframe wow">
+                                        <a href="https://chatintopcol.netlify.app/" target="_blank">
+											<span class="overlay">
+												<span class="pf_text">
+													<span class="project-name">Chat empresarial
+                                                    </span>
+
+												</span>
+											</span>
+											<img src="images/portfolio/chat.jpeg" alt="" />
+										</a>
+                                    </div>
+                                </div>
+                                <!-- close gallery item -->
+                                
+                                <!-- gallery item -->
+                                <div class="item retos gallery-item">
+                                    <div class="picframe wow">
+                                        <a href="https://retos-javascript.netlify.app/" target="_blank">
+											<span class="overlay">
+												<span class="pf_text">
+													<span class="project-name">25 Retos html,css y js</span>
+												</span>
+											</span>
+											<img src="images/portfolio/reto5.PNG" alt="" />
+										</a>
+                                    </div>
+                                </div>
+                                <!-- close gallery item -->
+
+                                
+                            </div>
+                        </div>
+                        <!-- portfolio filter close -->
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- section close -->
+    
+            <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Curriculo</h2>
+            <p>Con disposición a asumir retos y
+                al mejoramiento constante,
+                superación de las expectativas
+                de los grupos de trabajo y el
+                entorno, capacidad y facilidad en
+                crear relaciones efectivas de
+                largo plazo. Teniendo iniciativa
+                liderazgo y responsabilidad.
+                Excelente manejo de office, nuevas tecnologias y
+                facilidad en formulación de
+                nuevas propuestas..</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+          <!--     <h3 class="resume-title">Sumary</h3> -->
+              <!-- <div class="resume-item pb-0">
+                <h4>Alex Smith</h4>
+                <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+                <ul>
+                  <li>Portland par 127,Orlando, FL</li>
+                  <li>(123) 456-7891</li>
+                  <li>alice.barkley@example.com</li>
+                </ul>
+              </div> -->
+  
+              <h3 class="resume-title">Educación</h3>
+              <div class="resume-item">
+                <h4>BOOTCAMP PROGRAMATE DESARROLLADOR WEB</h4>
+                <h5>2021 - Actualidad</h5>
+                <p><em>Fundación Educamas </em></p>
+              
+              </div>    
+              <div class="resume-item">
+                <h4>Profesional en Administración de Empresa</h4>
+                <h5>2015 - 2017</h5>
+                <p><em>Fundación Universitaria del Área Andina</em></p>
+                
+              </div>
+              <div class="resume-item">
+                <h4>Tecnologo en Gestion Bancaria y de Entidades Financieras</h4>
+                <h5>2012 - 2014</h5>
+                <p><em>Servicio Nacional de Aprendizaje SENA</em></p>
+               
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Experiencia Profesional</h3>
+              <div class="resume-item">
+                <h4>Aprendiz Sena</h4>
+                <h5>2013 - 2014</h5>
+                <p><em>Crear país </em></p>
+               <ul>
+                  <li>Gestionar cartera castigada, Manejo de base de datos</li>
+                  <li>Fidelización del
+                    cliente, Localización de datos, Colaborar en las diferentes areas </li>
+                  <li>Demás actividades asignadas por mi jefe. Cumpliendo siempre con los
+                    objetivos de la organización obteniendo reconocimiento económico</li>
+                </ul>
+                
+              </div>
+              <div class="resume-item">
+                <h4>Asistente administrativo</h4>
+                <h5>2017 - 2018</h5>
+                <p><em>JYM CONSULTORES</em></p>
+                <ul>
+                  <li>Procesar y registrar información mediante la actualización de bases de datos o archivos informático</li>
+                  <li>Control y manejo de archivo, Radicación de facturas, Manejo del
+                    programa Helisa. Demás actividades asignadas por mi jefe.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+      <!-- End Resume Section -->
+       <!-- begin contact -->
+      <section id="section-redes">
+
+            <div class="col-md-12 text-center">
+                <h2>Ponte en contacto</h2>
+            </div>
+            <div class="col-md-8 col-md-offset-2 wow fadeInUp">
+                <div class="row">
+                    <form name="contactForm" id='contact-form' class="contact_form">
+                        <div class="col-md-6">
+                            <div class="field-set">
+                                <input type="text" name="user_name" class="form-control" placeholder="Nombre" required>
+                                <div class="line-fx"></div>
+                            </div>
+                            <div class="field-set">
+                                <input type="email" name="user_email" class="form-control" placeholder="Email" required>
+                                <div class="line-fx"></div>
+                            </div>
+                            <div class="field-set">
+                                <input type="text" name="contact_number" class="form-control"
+                                    placeholder="Numero">
+                                <div class="line-fx"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field-set">
+                                <textarea name="message" class="form-control" placeholder="Mensaje" required></textarea>
+                                <div class="line-fx"></div>
+                            </div>
+                        </div>
+                        <div class="spacer-single"></div>
+                        <div class="col-md-12 text-center">
+                            <div id='submit'>
+                                <button type="submit" value="Send">Enviar</button>
+                                <button type="reset" value="Limpiar formulario">Nuevo Mensaje</button>
+                            </div>
+         </section>
+    
+    <!-- end contact -->
+            
+
+        </div>
+  
+        <!-- footer begin -->
+        <footer id="redes"> 
+
+            <div class="container text-center text-light">
+                <div class="row">
+                    <div class="col-md-12 social-wrapper">
+                        <div class="social-icons big">
+                            <a href="https://github.com/carolina06-sam"><i class="faz fab fa-github fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/carolina-isabel-samac%C3%A1-gonz%C3%A1lez-976b79171/"><i class="fa fab fa-linkedin fa-lg"></i></a>
+                            <a href="mailto:carolinasamacagonzalez@gmail.com">
+                                <i class="far fa-envelope"></i>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="subfooter">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            &copy; Carolina samaca
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    
+        </footer>
+        <!-- footer close -->
+
+       
+    </div>
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+  <!--   <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/typed-custom.js"></script>
+    <script src="js/designesia.js"></script>
+  <!--  <script src="js/main.js"></script> -->
+
+</body>
+
+</html>
